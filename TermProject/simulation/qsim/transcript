@@ -1,0 +1,21 @@
+# do TermProject.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:20:22 on Dec 21,2021
+# vlog -work work TermProject.vo 
+# -- Compiling module test_3sec
+# 
+# Top level modules:
+# 	test_3sec
+# End time: 01:20:22 on Dec 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:20:22 on Dec 21,2021
+# vlog -work work Waveform10.vwf.vt 
+# -- Compiling module test_3sec_vlg_vec_tst
+# 
+# Top level modules:
+# 	test_3sec_vlg_vec_tst
+# End time: 01:20:22 on Dec 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# after#1

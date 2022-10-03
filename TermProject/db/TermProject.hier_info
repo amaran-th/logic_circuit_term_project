@@ -1,0 +1,346 @@
+|step3
+led3 <= cmp_4bit:inst1111.isEqual
+step3 => cmp_4bit:inst1111.en
+step3 => cmp_4bit:inst6.en
+step3 => cmp_4bit:inst7.en
+step3 => cmp_4bit:inst8888.en
+step3 => cmp_4bit:inst9.en
+step3 => cmp_4bit:inst101.en
+rand1[0] => cmp_4bit:inst1111.din1[0]
+rand1[1] => cmp_4bit:inst1111.din1[1]
+rand1[2] => cmp_4bit:inst1111.din1[2]
+rand1[3] => cmp_4bit:inst1111.din1[3]
+in1[0] => cmp_4bit:inst1111.din2[0]
+in1[1] => cmp_4bit:inst1111.din2[1]
+in1[2] => cmp_4bit:inst1111.din2[2]
+in1[3] => cmp_4bit:inst1111.din2[3]
+led4 <= cmp_4bit:inst6.isEqual
+rand2[0] => cmp_4bit:inst6.din1[0]
+rand2[1] => cmp_4bit:inst6.din1[1]
+rand2[2] => cmp_4bit:inst6.din1[2]
+rand2[3] => cmp_4bit:inst6.din1[3]
+in2[0] => cmp_4bit:inst6.din2[0]
+in2[1] => cmp_4bit:inst6.din2[1]
+in2[2] => cmp_4bit:inst6.din2[2]
+in2[3] => cmp_4bit:inst6.din2[3]
+led5 <= cmp_4bit:inst7.isEqual
+rand3[0] => cmp_4bit:inst7.din1[0]
+rand3[1] => cmp_4bit:inst7.din1[1]
+rand3[2] => cmp_4bit:inst7.din1[2]
+rand3[3] => cmp_4bit:inst7.din1[3]
+in3[0] => cmp_4bit:inst7.din2[0]
+in3[1] => cmp_4bit:inst7.din2[1]
+in3[2] => cmp_4bit:inst7.din2[2]
+in3[3] => cmp_4bit:inst7.din2[3]
+led6 <= cmp_4bit:inst8888.isEqual
+rand4[0] => cmp_4bit:inst8888.din1[0]
+rand4[1] => cmp_4bit:inst8888.din1[1]
+rand4[2] => cmp_4bit:inst8888.din1[2]
+rand4[3] => cmp_4bit:inst8888.din1[3]
+in4[0] => cmp_4bit:inst8888.din2[0]
+in4[1] => cmp_4bit:inst8888.din2[1]
+in4[2] => cmp_4bit:inst8888.din2[2]
+in4[3] => cmp_4bit:inst8888.din2[3]
+led7 <= cmp_4bit:inst9.isEqual
+rand5[0] => cmp_4bit:inst9.din1[0]
+rand5[1] => cmp_4bit:inst9.din1[1]
+rand5[2] => cmp_4bit:inst9.din1[2]
+rand5[3] => cmp_4bit:inst9.din1[3]
+in5[0] => cmp_4bit:inst9.din2[0]
+in5[1] => cmp_4bit:inst9.din2[1]
+in5[2] => cmp_4bit:inst9.din2[2]
+in5[3] => cmp_4bit:inst9.din2[3]
+led8 <= cmp_4bit:inst101.isEqual
+rand6[0] => cmp_4bit:inst101.din1[0]
+rand6[1] => cmp_4bit:inst101.din1[1]
+rand6[2] => cmp_4bit:inst101.din1[2]
+rand6[3] => cmp_4bit:inst101.din1[3]
+in6[0] => cmp_4bit:inst101.din2[0]
+in6[1] => cmp_4bit:inst101.din2[1]
+in6[2] => cmp_4bit:inst101.din2[2]
+in6[3] => cmp_4bit:inst101.din2[3]
+com3[0] <= <VCC>
+com3[1] <= <VCC>
+com3[2] <= <VCC>
+com3[3] <= <VCC>
+com4[0] <= <VCC>
+com4[1] <= <VCC>
+com4[2] <= <VCC>
+com4[3] <= <VCC>
+com5[0] <= <VCC>
+com5[1] <= <VCC>
+com5[2] <= <VCC>
+com5[3] <= <VCC>
+com6[0] <= <VCC>
+com6[1] <= <VCC>
+com6[2] <= <VCC>
+com6[3] <= <VCC>
+com7[0] <= four_bitx1tox2:inst13.ten[0]
+com7[1] <= four_bitx1tox2:inst13.ten[1]
+com7[2] <= four_bitx1tox2:inst13.ten[2]
+com7[3] <= four_bitx1tox2:inst13.ten[3]
+com8[0] <= four_bitx1tox2:inst13.one[0]
+com8[1] <= four_bitx1tox2:inst13.one[1]
+com8[2] <= four_bitx1tox2:inst13.one[2]
+com8[3] <= four_bitx1tox2:inst13.one[3]
+
+
+|step3|cmp_4bit:inst1111
+isEqual <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+din1[0] => inst3.IN0
+din1[1] => inst2.IN0
+din1[2] => inst1.IN0
+din1[3] => inst.IN0
+din2[0] => inst3.IN1
+din2[1] => inst2.IN1
+din2[2] => inst1.IN1
+din2[3] => inst.IN1
+en => inst6.IN1
+
+
+|step3|cmp_4bit:inst6
+isEqual <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+din1[0] => inst3.IN0
+din1[1] => inst2.IN0
+din1[2] => inst1.IN0
+din1[3] => inst.IN0
+din2[0] => inst3.IN1
+din2[1] => inst2.IN1
+din2[2] => inst1.IN1
+din2[3] => inst.IN1
+en => inst6.IN1
+
+
+|step3|cmp_4bit:inst7
+isEqual <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+din1[0] => inst3.IN0
+din1[1] => inst2.IN0
+din1[2] => inst1.IN0
+din1[3] => inst.IN0
+din2[0] => inst3.IN1
+din2[1] => inst2.IN1
+din2[2] => inst1.IN1
+din2[3] => inst.IN1
+en => inst6.IN1
+
+
+|step3|cmp_4bit:inst8888
+isEqual <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+din1[0] => inst3.IN0
+din1[1] => inst2.IN0
+din1[2] => inst1.IN0
+din1[3] => inst.IN0
+din2[0] => inst3.IN1
+din2[1] => inst2.IN1
+din2[2] => inst1.IN1
+din2[3] => inst.IN1
+en => inst6.IN1
+
+
+|step3|cmp_4bit:inst9
+isEqual <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+din1[0] => inst3.IN0
+din1[1] => inst2.IN0
+din1[2] => inst1.IN0
+din1[3] => inst.IN0
+din2[0] => inst3.IN1
+din2[1] => inst2.IN1
+din2[2] => inst1.IN1
+din2[3] => inst.IN1
+en => inst6.IN1
+
+
+|step3|cmp_4bit:inst101
+isEqual <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+din1[0] => inst3.IN0
+din1[1] => inst2.IN0
+din1[2] => inst1.IN0
+din1[3] => inst.IN0
+din2[0] => inst3.IN1
+din2[1] => inst2.IN1
+din2[2] => inst1.IN1
+din2[3] => inst.IN1
+en => inst6.IN1
+
+
+|step3|four_bitx1tox2:inst13
+one[0] <= mux_2x1:inst333.m_out
+one[1] <= mux_2x1:inst8.m_out
+one[2] <= mux_2x1:inst12.m_out
+one[3] <= mux_2x1:inst10.m_out
+din[0] => mux_2x1:inst333.s_1
+din[0] => mux_2x1:inst333.s_0
+din[1] => inst9.IN0
+din[1] => inst111.IN1
+din[1] => mux_2x1:inst8.s_0
+din[1] => inst13.IN2
+din[2] => inst111.IN0
+din[2] => inst13.IN1
+din[2] => mux_2x1:inst12.s_0
+din[3] => inst6.IN1
+din[3] => mux_2x1:inst10.s_0
+din[3] => inst13.IN0
+ten[0] <= mux_2x1:inst4.m_out
+ten[1] <= <GND>
+ten[2] <= <GND>
+ten[3] <= <GND>
+
+
+|step3|four_bitx1tox2:inst13|mux_2x1:inst8
+m_out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+s_0 => inst1.IN0
+sel => inst3.IN0
+sel => inst.IN1
+s_1 => inst.IN0
+
+
+|step3|four_bitx1tox2:inst13|mux_2x1:inst10
+m_out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+s_0 => inst1.IN0
+sel => inst3.IN0
+sel => inst.IN1
+s_1 => inst.IN0
+
+
+|step3|four_bitx1tox2:inst13|mux_2x1:inst12
+m_out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+s_0 => inst1.IN0
+sel => inst3.IN0
+sel => inst.IN1
+s_1 => inst.IN0
+
+
+|step3|four_bitx1tox2:inst13|mux_2x1:inst333
+m_out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+s_0 => inst1.IN0
+sel => inst3.IN0
+sel => inst.IN1
+s_1 => inst.IN0
+
+
+|step3|four_bitx1tox2:inst13|mux_2x1:inst4
+m_out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+s_0 => inst1.IN0
+sel => inst3.IN0
+sel => inst.IN1
+s_1 => inst.IN0
+
+
+|step3|rippleCarry_s:inst10
+c1 <= halfAdder_s:inst.C
+A0 => halfAdder_s:inst.A
+B0 => halfAdder_s:inst.B
+s1 <= halfAdder_s:inst.S
+c2 <= fullAdder_s:inst1.C
+A1 => fullAdder_s:inst1.Y
+B1 => fullAdder_s:inst1.Z
+s2 <= fullAdder_s:inst1.S
+c3 <= fullAdder_s:inst2.C
+A2 => fullAdder_s:inst2.Y
+B2 => fullAdder_s:inst2.Z
+s3 <= fullAdder_s:inst2.S
+c4 <= fullAdder_s:inst3.C
+A3 => fullAdder_s:inst3.Y
+B3 => fullAdder_s:inst3.Z
+s4 <= fullAdder_s:inst3.S
+
+
+|step3|rippleCarry_s:inst10|halfAdder_s:inst
+C <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|step3|rippleCarry_s:inst10|fullAdder_s:inst1
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+X => halfAdder_s:inst.A
+Y => halfAdder_s:inst.B
+Z => inst4.IN1
+Z => inst5.IN1
+C <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|step3|rippleCarry_s:inst10|fullAdder_s:inst1|halfAdder_s:inst
+C <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|step3|rippleCarry_s:inst10|fullAdder_s:inst2
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+X => halfAdder_s:inst.A
+Y => halfAdder_s:inst.B
+Z => inst4.IN1
+Z => inst5.IN1
+C <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|step3|rippleCarry_s:inst10|fullAdder_s:inst2|halfAdder_s:inst
+C <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|step3|rippleCarry_s:inst10|fullAdder_s:inst3
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+X => halfAdder_s:inst.A
+Y => halfAdder_s:inst.B
+Z => inst4.IN1
+Z => inst5.IN1
+C <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|step3|rippleCarry_s:inst10|fullAdder_s:inst3|halfAdder_s:inst
+C <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|step3|fullAdder_s:inst8
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+X => halfAdder_s:inst.A
+Y => halfAdder_s:inst.B
+Z => inst4.IN1
+Z => inst5.IN1
+C <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|step3|fullAdder_s:inst8|halfAdder_s:inst
+C <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|step3|fullAdder_s:inst81
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+X => halfAdder_s:inst.A
+Y => halfAdder_s:inst.B
+Z => inst4.IN1
+Z => inst5.IN1
+C <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|step3|fullAdder_s:inst81|halfAdder_s:inst
+C <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
